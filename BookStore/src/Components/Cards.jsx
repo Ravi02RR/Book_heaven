@@ -16,12 +16,13 @@ const Cards = ({ title, about, previewLink, thumbnail, authors }) => {
                 <h2 className="card-title text-lg font-semibold mb-2">
                     {title}
                     {authors && (
-                        <div className="badge badge-secondary ml-2">{authors}</div>
+                        <div className="badge badge-secondary ml-2" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{authors}</div>
+
                     )}
                 </h2>
                 <p className="text-sm text-white-600 line-clamp-3">{about}</p>
                 <div className="card-actions justify-end mt-2">
-                    <a className="btn btn-outline" href={previewLink}>Read more</a>
+                    <a className="btn btn-outline" href={previewLink} target='blank'>Read Book</a>
                 </div>
             </div>
         </div>
