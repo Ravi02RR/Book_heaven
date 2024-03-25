@@ -2,10 +2,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import logo from './logo.png'
 
 const Navbar = () => {
 
 
+    // const linkStyle = {
+    //     fontSize: '1.5rem', 
+    //     textDecoration: 'none',
+    //     color: 'inherit',
+    //     textShadow: '2px 2px 3px rgba(0,0,0,0.5)' 
+    // };
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -22,7 +29,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <Link to={'/'} className="btn btn-ghost text-xl">Book Heaven!</Link>
+                <Link to={'/'} className="btn btn-ghost text-xl italic" ><img className='h-10' src={logo}></img></Link>
             </div>
             <div className="navbar-end">
                 <button className="btn btn-ghost btn-circle">
